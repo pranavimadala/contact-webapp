@@ -1,0 +1,16 @@
+
+<div *ngIf="selectcontact" class="form-container">
+        <h1>{{selectcontact.name}} 
+          <a [routerLink]="['/add',selectcontact.id]" class="display" >
+         <span (click)="edit(selectcontact)" > <img src="../../assets/images/edit1.jpg" class="logo image1" >
+          <p class="title">EDIT</p></span></a>
+          <a routerLink="" class="display" (click)="delete(selectcontact)"> 
+            <img src="../../assets/images/delete1.png" class="logo" >
+          <p class="title">DELETE</p></a></h1>
+        <p class="email">Email: {{selectcontact.email}}</p>
+        <p>Mobile: {{selectcontact.mobile}}</p> 
+        <p>Landline: {{selectcontact.landline}}</p>
+        <p class="website">Website: {{selectcontact.website}}</p> 
+        <p class="address">Address: {{selectcontact.address}}</p>
+       
+      </div>

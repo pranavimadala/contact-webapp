@@ -1,0 +1,36 @@
+
+.form-container{
+    width:800px;
+    position: absolute;
+     left:100px;
+     top:100px;
+
+}
+.logo{
+    cursor:pointer;
+    width:15px;
+    height:15px;
+    margin:5px;
+    position: relative;
+    top:6px;
+}
+.image1{
+    margin-left:100px;
+}
+.title{
+    display: inline-block;
+    font-size:15px;
+    font-weight:600;margin-right:50px;
+}
+.email,.website,.address{
+    padding-top:30px;
+    padding-bottom:30px;
+}
+.website{
+    padding-bottom:0;
+}
+
+.display{    
+    text-decoration: none;
+    color:black;
+}

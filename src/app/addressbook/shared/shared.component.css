@@ -1,0 +1,9 @@
+.body-sidebar{
+    display: inline-block;
+    width:500px;
+}
+.body-routing{
+    display:inline-block;
+    position: absolute;
+    top:130px;
+}

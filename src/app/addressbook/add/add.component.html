@@ -1,0 +1,69 @@
+<div class="form-container">
+<form [formGroup]="addressForm"  >
+    <label>
+        <h5>Name:</h5>
+<input type="text" formControlName="name"  class="in-container"  size="90px">
+   
+<div *ngIf="addressForm.get('name').errors && addressForm.get('name').touched ">
+    <div *ngIf="addressForm.get('name').hasError('required')">
+      <span style="color: red;">Please Enter Name.</span>
+    </div>
+    </div>
+    
+</label>
+    <label>
+        <h5>Email:</h5>
+<input type="text" formControlName="email"  class="in-container" size="90px">
+<div *ngIf="addressForm.get('email').errors && addressForm.get('email').touched ">
+    <div *ngIf="addressForm.get('email').hasError('email')">
+      <span style="color: red;">Enter proper mail id</span>
+    </div>
+    </div>
+    </label>
+    <div class="side-by-side mobile">
+    <label>
+        <h5>Mobile:</h5>
+<input type="text" formControlName="mobile"  class="in-container" size="40px">
+<div *ngIf="addressForm.get('mobile').errors && addressForm.get('mobile').touched ">
+    <div *ngIf="addressForm.get('mobile').hasError('required')">
+      <span style="color: red;">Enter number with proper length</span>
+    </div>
+    </div>
+    </label>
+    
+    </div>
+    <div class="side-by-side mobile">
+    <label>
+        <h5>Landline:</h5>
+<input type="text" formControlName="landline"  class="in-container" size="40px">
+<div *ngIf="addressForm.get('landline').errors && addressForm.get('landline').touched ">
+    <div *ngIf="addressForm.get('landline').hasError('required')">
+      <span style="color: red;">Landline is required</span>
+    </div>
+    </div>
+    </label>
+    </div>
+    <label>
+       <h5> Website:</h5>
+<input type="text" formControlName="website"  class="in-container" size="90px">
+<div *ngIf="addressForm.get('website').errors && addressForm.get('website').touched ">
+    <div *ngIf="addressForm.get('website').hasError('required')">
+      <span style="color: red;">Website is required</span>
+    </div>
+    </div>
+    </label>
+    <label>
+        <h5>Address:</h5>
+<input type="text" formControlName="address"  class="in-container address" size="90px">
+<div *ngIf="addressForm.get('address').errors && addressForm.get('address').touched ">
+    <div *ngIf="addressForm.get('address').hasError('required')">
+      <span style="color: red;">Address is required</span>
+    </div>
+    </div>
+    </label>
+    
+    <a routerLink="">  <button type="submit" class="add-class" [disabled]="!addressForm.valid"  *ngIf="status" (click)="onSubmit()">ADD</button>
+   <button type="button" class="edit-class edit" *ngIf="!status" (click)="edited()" >Edit</button>
+   <button type="button" class="edit-class cancel" *ngIf="!status"  >Cancel</button></a>
+</form>
+</div>

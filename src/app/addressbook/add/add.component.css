@@ -1,0 +1,58 @@
+.form-container{
+    width:700px;
+    box-shadow: 0 0 20px #333333;
+    padding:22px;
+    position: absolute;
+    margin:20px;
+    background-color:white;
+}
+.in-container{
+    height:40px;
+    margin-top:5px;
+    margin-bottom:5px;
+    border:1px solid black;
+}
+.address{
+    height:90px;
+}
+.side-by-side{
+    display: inline-block;
+}
+
+.mobile{
+    padding-right:45px;
+}
+.fields{
+    padding-top:10px;
+}
+
+.add-class{
+    padding:10px;
+    padding-left:55px;
+    padding-right:55px;
+    background-color: #468C00;
+    color:white;
+    border:none;
+    margin-bottom:10px;
+    margin-left:555px;
+    margin-right:0;
+    cursor:pointer;
+}
+.edit-class{
+    border:none;
+    margin:10px;
+    float:right;
+    padding:10px;
+    padding-left:55px;
+    padding-right:55px;
+    background-color: #468C00;
+    color:white;
+    cursor:pointer;
+}
+.edit{
+    margin-left:390px;
+}
+.cancel{
+    padding-left:45px;
+    padding-right:45px;
+}
